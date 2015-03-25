@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'pages#home'
-  resources :users, only: [:show, :index]
+  resources :users
   resources :posts, only: [:create, :edit, :update, :destroy]
   resources :activities, only: [:index]
   resources :friendships, only: [:create, :destroy, :accept] do 

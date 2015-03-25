@@ -9,7 +9,9 @@
 <div class="container">
 	<ul class="timeline">
 	<% @activities.each_with_index do |activity| %>
+	<% unless activity.trackable_type == "Friendship" && activity.owner == current_user %>
 	<% if activity.trackable %>
+
 	<% if cycle('odd', 'even') == 'odd' %>
 	<li class="timeline-inverted">
 	<% else %>
@@ -31,6 +33,7 @@
 			<% end %>
 		</div>
 	</div>
+	<% end %>
 	<% end %>
 	<% end %>
 	</ul>
