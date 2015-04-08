@@ -1,5 +1,5 @@
 class RegistrationsController < Devise::RegistrationsController
-	include devise_permitted_paramters
+	include devise_permitted_parameters
 
 	private
 
