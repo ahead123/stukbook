@@ -47,7 +47,7 @@ gem 'gravatarify', '~> 3.0.0'
 
 gem 'public_activity'
 
-gem 'auto_html'
+gem 'auto_html', '>= 1.6.4'
 
 group :development do
 	gem 'sqlite3'
