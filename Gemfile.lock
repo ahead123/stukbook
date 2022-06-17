@@ -52,6 +52,7 @@ GEM
       execjs
     coffee-script-source (1.9.0)
     commonjs (0.2.7)
+    concurrent-ruby (1.1.10)
     devise (3.3.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -62,7 +63,8 @@ GEM
     execjs (2.3.0)
     gravatarify (3.0.0)
     hike (1.2.3)
-    i18n (0.7.0)
+    i18n (0.9.5)
+      concurrent-ruby (~> 1.0)
     jbuilder (2.2.7)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
